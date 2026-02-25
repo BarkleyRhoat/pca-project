@@ -23,7 +23,7 @@ nav ul {
     justify-content: center;
     gap: 2rem;
     background-color:#886969;
-    border-radius: 50px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -36,13 +36,14 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    border-radius: 5px;
 }
 
 nav a:hover {
     background-color: white;
-    border-radius: 5px;
     opacity: 0.3;
+    transform: translateY(-2px);
 }
 
 #animation {
@@ -51,4 +52,35 @@ nav a:hover {
   font-family: 'Roboto', sans-serif;
   z-index: 500;
   position: relative;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#githubLink {
+    color: white;
+    background-color: #886969;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#githubLink:hover {
+    background-color: #a67d7d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#githubLink:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
