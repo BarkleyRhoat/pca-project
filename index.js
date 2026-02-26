@@ -9,7 +9,7 @@ setInterval(() => {
     h1.textContent = languages[currentLanguageIndex];
 }, 2000);
 let angle = 0;
-const radius = 50;
+const radius = 200;
 h1.style.position = 'absolute';
 const centerX = window.innerWidth / 2 - h1.offsetWidth / 2;
 const centerY = window.innerHeight / 2 - h1.offsetHeight / 2;

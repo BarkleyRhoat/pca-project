@@ -55,6 +55,24 @@ nav a:hover {
   position: relative;
 }
 
+#gamesHeader {
+  color: #886969;
+  font-family: 'Azeret Mono', monospace;
+  margin-top: 100px;
+  z-index: 500;
+  position: relative;
+  white-space: nowrap;
+  animation: slideAcross 3s ease-in-out infinite alternate;
+}
+@keyframes slideAcross {
+    0%{
+        left: -0%;
+    }
+    100%{
+        left: calc(100% - 200px);
+    }
+}
+
 footer {
     position: fixed;
     bottom: 20px;
