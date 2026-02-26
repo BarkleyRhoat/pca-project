@@ -93,7 +93,7 @@ footer {
     background-color: #886969;
     border-radius: 50%;
     pointer-events: none;
-    animation: fadeOut .5s ease-out forwards;
+    animation: fadeOut .7s ease-out forwards;
     z-index: 100;
 }
 @keyframes fadeOut {
