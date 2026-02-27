@@ -40,6 +40,10 @@ nav a {
   transition: all 0.3s ease;
   border-radius: 5px;
 }
+nav a.active {
+  background-color: #a67d7d;
+  opacity: 0.6;
+}
 
 nav a:hover {
   background-color: white;

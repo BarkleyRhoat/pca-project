@@ -1,4 +1,6 @@
+// background music 
 const song = new Audio('./assets/3-09. 007 Watch Theme.mp3');
+song.loop = true;
 function playMusic() {
     song.play();
 }
