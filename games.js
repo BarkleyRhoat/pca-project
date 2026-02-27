@@ -1,3 +1,11 @@
+const song = new Audio('./assets/3-09. 007 Watch Theme.mp3');
+function playMusic() {
+    song.play();
+}
+function pauseMusic() {
+    song.pause();
+}
+
 // TIC TAC TOE GAME!!!!!
 const tttBoard = document.querySelector("#tttBoard");
 

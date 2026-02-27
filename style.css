@@ -191,6 +191,41 @@ footer {
   transform: translateY(-2px);
 }
 
+.musicTitle {
+  color: #886969;
+  font-family: "Azeret Mono", monospace;
+  width: 100%;
+  text-align: center;
+}
+
+.musicControls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 60px;
+}
+
+.musicBtn {
+  color: black;
+  background-color: #886969;
+  border: none;
+  font-family: "Azeret Mono", monospace;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.musicBtn:hover {
+  background-color: #a67d7d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 .signage {
   position: fixed;
   bottom: 15px;

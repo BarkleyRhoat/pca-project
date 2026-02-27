@@ -1,39 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PCA Project - Games</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="#">Page 3</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
     </nav>
     <h1 id="gamesHeader">Games</h1>
     <div class="gamesList">
-        <section class="tttSection">
-            <h2 class="ttt-title">Tic Tac Toe</h2>
-            <div class="tttBoard" id="tttBoard"></div>
-            <button class="tttReset" id="tttReset">Reset</button>
-        </section>
-        <section class="pongSection">
-            <h2 class="pongTitle">Ping Pong</h2>
-            <canvas id="pongGame" style="background-color: #a67d7d;"></canvas>
-        </section>
-        <section class="reactionSection">
-            <h2 class="reactionTitle">Reaction Time</h2>
-            <div class="reactionBox" id="reactionBox">
-            <span class="reactionMsg">Click to Start</span>
-            </div>
-        </section>
+      <section class="tttSection">
+        <h2 class="ttt-title">Tic Tac Toe</h2>
+        <div class="tttBoard" id="tttBoard"></div>
+        <button class="tttReset" id="tttReset">Reset</button>
+      </section>
+      <section class="pongSection">
+        <h2 class="pongTitle">Ping Pong</h2>
+        <canvas id="pongGame" style="background-color: #a67d7d"></canvas>
+      </section>
+      <section class="reactionSection">
+        <h2 class="reactionTitle">Reaction Time</h2>
+        <div class="reactionBox" id="reactionBox">
+          <span class="reactionMsg">Click to Start</span>
+        </div>
+      </section>
+    </div>
+    <div class="musicControls">
+        <h3 class="musicTitle">Background Music 🎧</h3>
+        <button class="musicBtn" onclick="playMusic()">▶ Play</button>
+        <button class="musicBtn" onclick="pauseMusic()">⏸ Pause</button>
     </div>
     <div class="signage">created by BarkleyRhoat</div>
     <script src="./games.js"></script>
