@@ -31,6 +31,7 @@ document.querySelector("#tttReset").addEventListener("click", () => {
     .querySelectorAll(".tttCell")
     .forEach((cell) => (cell.textContent = ""));
 });
+// END OF TIC TAC TOE GAME!!!!
 
 // PING PONG GAME!!!
 
@@ -240,3 +241,4 @@ function loop() {
   requestAnimationFrame(loop);
 }
 loop();
+// END OF PING PONG GAME!!!!
