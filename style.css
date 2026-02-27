@@ -93,6 +93,26 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+#portfolioLink {
+    color: black;
+    background-color: #886969;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-left: 15px;
+}
+
+#portfolioLink:hover {
+    background-color: #a67d7d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 #githubLink:hover {
     background-color: #a67d7d;
     transform: translateY(-2px);
@@ -106,7 +126,7 @@ footer {
 
 .gamesList {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     gap: 60px;
     padding: 40px 40px 80px;
@@ -120,7 +140,7 @@ footer {
 
 .ttt-title {
     color: #886969;
-    font-family: 'Azeret Mono', monospace;
+    font-family: 'Arial', sans-serif;
     margin-bottom: 10px;
 }
 
@@ -134,7 +154,7 @@ footer {
 .tttCell {
     font-size: 2rem;
     font-weight: 700;
-    font-family: 'Azeret Mono', monospace;
+    font-family: 'Arial', sans-serif;
     color: #886969;
     background: #1a1a1a;
     border: 2px solid #886969;
@@ -167,6 +187,18 @@ footer {
 .tttReset:hover {
     background-color: #a67d7d;
     transform: translateY(-2px);
+}
+
+.signage {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    color: #886969;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.75rem;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 1000;
 }
 
 .trail {
