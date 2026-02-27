@@ -131,7 +131,7 @@ footer {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 60px;
-  padding: 40px 40px 80px;
+  padding: 100px 40px 80px;
 }
 
 .tttSection {
@@ -142,7 +142,7 @@ footer {
 
 .ttt-title {
   color: #886969;
-  font-family: "Arial", sans-serif;
+  font-family: "Azeret Mono", monospace;
   margin-bottom: 10px;
 }
 
@@ -203,6 +203,18 @@ footer {
   z-index: 1000;
 }
 
+.pongSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pongTitle {
+    color: #886969;
+    font-family: "Azeret Mono", monospace;
+    margin-bottom: 10px;
+}
+
 .reactionSection {
     display: flex;
     flex-direction: column;
@@ -211,7 +223,7 @@ footer {
 
 .reactionTitle {
     color: #886969;
-    font-family: "Arial", sans-serif;
+    font-family: "Azeret Mono", monospace;
     margin-bottom: 10px;
 }
 
@@ -228,6 +240,14 @@ footer {
     transition: background 0.2s ease;
 }
 
+.reactionBox .reactionMsg {
+    color: #886969;
+    font-family: "Arial", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
 
 .trail {
   position: absolute;

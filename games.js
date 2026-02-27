@@ -246,3 +246,37 @@ loop();
 // REACTION TIME GAME!!!!
 
 const reactionBox = document.getElementById('reactionBox');
+const reactionMsg = reactionBox.querySelector('.reactionMsg')
+let reactionTimeout = null;
+let reactionStart = 0;
+let reactionState = 'idle'; 
+
+reactionBox.addEventListener('click', () => {
+    if (reactionState === 'idle') {
+        reactionState = 'waiting';
+        reactionMsg.textContent = 'wait ...';
+        reactionBox.style.background = '#1a1a1a';
+        const delay = 2000 + Math.random() * 3000;
+        reactionTimeout = setTimeout(() => {
+            reactionState = 'ready';
+            reactionBox.style.background = '#2e7d32';
+            reactionMsg.textContent = 'click!';
+            reactionStart = Date.now();
+        }, delay);
+    } else if (reactionState === 'waiting') {
+        clearTimeout(reactionTimeout);
+        reactionState = 'idle';
+        reactionBox.style.background = '#8b0000';
+        reactionMsg.textContent = 'too soon! Click to retry';
+        setTimeout(() => {
+            reactionBox.style.background = '#1a1a1a';
+        }, 300);
+    } else if (reactionState === 'ready') {
+        const reactionTime = Date.now() - reactionStart;
+        reactionState = 'idle';
+        reactionBox.style.background = '#1a1a1a';
+        reactionMsg.textContent = `Your reaction time: ${reactionTime} ms. Click to try again.`;
+    }
+});
+
+// END OF REACTION TIME GAME!!!!

@@ -28,6 +28,7 @@ This project was built with
 - HTML
 - CSS
 - Google Fonts
+- Canvas API (2D rendering for Ping Pong game)
 
 ## Installation & Setup
 
@@ -65,6 +66,7 @@ git clone https://github.com/BarkleyRhoat/pca-project.git
   - Player 2: `Arrow Up` / `Arrow Down`
   - Press `Spacebar` to start
   - First to 10 Wins!
+- **Reaction Time Test** - Click to start, wait for the box to turn green, then click as fast as you can. Your reaction time is displayed in milliseconds.  
 
 ## Contributors
 
