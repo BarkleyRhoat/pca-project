@@ -288,6 +288,19 @@ footer {
     padding: 20px;
 }
 
+.drawPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#drawCanvas {
+    border: 10px solid #886969;
+    border-radius: 10px;
+    cursor: crosshair;
+}
+
 .trail {
   position: absolute;
   width: 10px;
