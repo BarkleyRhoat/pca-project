@@ -242,3 +242,7 @@ function loop() {
 }
 loop();
 // END OF PING PONG GAME!!!!
+
+// REACTION TIME GAME!!!!
+
+const reactionBox = document.getElementById('reactionBox');
