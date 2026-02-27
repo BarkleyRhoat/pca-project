@@ -2,62 +2,62 @@ body {
   background: black;
   margin: 0;
   padding: 0;
-  font-family: 'Azeret Mono', monospace;
+  font-family: "Azeret Mono", monospace;
 }
 
 nav {
-    position: fixed;
-    top: 20px;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    font-family: 'Azeret Mono', monospace;
-    font-weight: bold;
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  font-family: "Azeret Mono", monospace;
+  font-weight: bold;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    background-color:#886969;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  list-style: none;
+  margin: 0;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #886969;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 nav li {
-    display: inline;
+  display: inline;
 }
 
 nav a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-    border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-radius: 5px;
 }
 
 nav a:hover {
-    background-color: white;
-    opacity: 0.3;
-    transform: translateY(-2px);
+  background-color: white;
+  opacity: 0.3;
+  transform: translateY(-2px);
 }
 
 #animation {
   color: #886969;
   text-align: center;
-  font-family: 'Azeret Mono', monospace;
+  font-family: "Azeret Mono", monospace;
   z-index: 500;
   position: relative;
 }
 
 #gamesHeader {
   color: #886969;
-  font-family: 'Azeret Mono', monospace;
+  font-family: "Azeret Mono", monospace;
   margin-top: 100px;
   z-index: 500;
   position: relative;
@@ -65,158 +65,159 @@ nav a:hover {
   animation: slideAcross 3s ease-in-out infinite alternate;
 }
 @keyframes slideAcross {
-    0%{
-        left: -0%;
-    }
-    100%{
-        left: calc(100% - 200px);
-    }
+  0% {
+    left: -0%;
+  }
+  100% {
+    left: calc(100% - 200px);
+  }
 }
 
 footer {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    font-family: 'Azeret Mono', monospace;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-family: "Azeret Mono", monospace;
 }
 
 #githubLink {
-    color: black;
-    background-color: #886969;
-    border: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 12px 25px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: black;
+  background-color: #886969;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 #portfolioLink {
-    color: black;
-    background-color: #886969;
-    border: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 12px 25px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    margin-left: 15px;
+  color: black;
+  background-color: #886969;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-left: 15px;
 }
 
 #portfolioLink:hover {
-    background-color: #a67d7d;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background-color: #a67d7d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 #githubLink:hover {
-    background-color: #a67d7d;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background-color: #a67d7d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 #githubLink:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .gamesList {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 60px;
-    padding: 40px 40px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 40px 40px 80px;
 }
 
 .tttSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ttt-title {
-    color: #886969;
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 10px;
+  color: #886969;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 10px;
 }
 
 .tttBoard {
-    width: min(90vw, 280px);
-    aspect-ratio: 1 / 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+  width: min(90vw, 280px);
+  aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
 }
 .tttCell {
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: 'Arial', sans-serif;
-    color: #886969;
-    background: #1a1a1a;
-    border: 2px solid #886969;
-    border-radius: 8px;
-    cursor: pointer;
-    display: grid;
-    place-items: center;
-    transition: background 0.2s ease;
-    user-select: none;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Arial", sans-serif;
+  color: #886969;
+  background: #1a1a1a;
+  border: 2px solid #886969;
+  border-radius: 8px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease;
+  user-select: none;
 }
 
 .tttCell:hover {
-    background: #2a2a2a;
+  background: #2a2a2a;
 }
 
 .tttReset {
-    margin-top: 20px;
-    color: black;
-    background-color: #886969;
-    border: none;
-    font-family: 'Azeret Mono', monospace;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  margin-top: 20px;
+  color: black;
+  background-color: #886969;
+  border: none;
+  font-family: "Azeret Mono", monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .tttReset:hover {
-    background-color: #a67d7d;
-    transform: translateY(-2px);
+  background-color: #a67d7d;
+  transform: translateY(-2px);
 }
 
 .signage {
-    position: fixed;
-    bottom: 15px;
-    right: 20px;
-    color: #886969;
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.75rem;
-    opacity: 0.6;
-    pointer-events: none;
-    z-index: 1000;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  color: #886969;
+  font-family: "Azeret Mono", monospace;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 1000;
 }
 
 .trail {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #886969;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: fadeOut .7s ease-out forwards;
-    z-index: 100;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #886969;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fadeOut 0.9s ease-out forwards;
+  z-index: 100;
 }
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {        opacity: 0;
-        transform: scale(2);
-}
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
 }

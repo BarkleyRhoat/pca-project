@@ -204,9 +204,31 @@ function ballBounce() {
 
   ball.x += ball.speed;
   ball.y += ball.gravity;
+  checkPaddleCollision()
 }
 
-// need to add collision detection for paddles, currently ball goes through them!!!!!
+function checkPaddleCollision() {
+    // Check collision with player one paddle
+    if (
+        ball.x < playerOne.x + playerOne.width &&
+        ball.x + ball.width > playerOne.x &&
+        ball.y + ball.height > playerOne.y &&
+        ball.y < playerOne.y + playerOne.height
+    ) {
+        ball.speed = Math.abs(ball.speed);
+        ball.x = playerOne.x + playerOne.width;
+}
+    // Check collision with player two paddle
+    if (
+        ball.x + ball.width > playerTwo.x &&
+        ball.x < playerTwo.x + playerTwo.width &&
+        ball.y + ball.height > playerTwo.y &&
+        ball.y < playerTwo.y + playerTwo.height
+    ) {
+        ball.speed = -Math.abs(ball.speed);
+        ball.x = playerTwo.x - ball.width;
+    }
+}
 
 // game loop
 function loop() {
