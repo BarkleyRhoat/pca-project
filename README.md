@@ -75,10 +75,12 @@ git clone https://github.com/BarkleyRhoat/pca-project.git
 ## Resources
 
 - [MDN Web Docs - Animation](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame)
+- [W3 Schools @keyframes](https://www.w3schools.com/cssref/atrule_keyframes.php)
 - [Mouse Trail Effect Tutorial](https://www.youtube.com/watch?v=ZotButrBGVI)
 - [Ping Pong Tutorial](https://www.youtube.com/watch?v=IISA4XaE2gE)
 - CoPilot helped with some ping pong logic.
-
+- [ Canvas Mdm Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
+- [Drawing App Tutorial](https://www.youtube.com/watch?v=mRDo-QXVUv8)
 ## Testing
 
 No automated tests at this time. All features were manually tested in-browser.
