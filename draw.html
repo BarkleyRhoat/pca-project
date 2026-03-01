@@ -23,7 +23,14 @@
     <div class="drawPage">
       <h2 class="drawTitle">Let's Draw</h2>
       <canvas id="drawCanvas"></canvas>
+      <label class="drawLabel">
+        Color
       <input type="color" id="colorPicker" value="#886969" />
+      </label>
+      <label class="drawLabel">
+        Size
+      <input type="range" id="brushSize" min="1" max="40" value="4"/>
+    </label>
     </div>
     <div class="signage">created by BarkleyRhoat</div>
     <script src="./draw.js"></script>

@@ -1,6 +1,7 @@
 const canvas = document.getElementById('drawCanvas');
 const ctx = canvas.getContext('2d');
 const colorPicker = document.getElementById("colorPicker");
+const brushSize = document.getElementById("brushSize")
 
 canvas.width = 800; // could go bigger if need be
 canvas.height = 500;
@@ -20,7 +21,7 @@ canvas.addEventListener('mousedown', (e) => {
 // allows drawing when mouse moves while the button is held down
 canvas.addEventListener('mousemove', (e) => {
     if (!drawing) return;
-    ctx.lineWidth = 3;
+    ctx.lineWidth = brushSize.value;
     ctx.lineCap = 'round';
     ctx.strokeStyle = colorPicker.value;
     ctx.lineTo(e.offsetX, e.offsetY);

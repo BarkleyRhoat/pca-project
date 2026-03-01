@@ -295,7 +295,8 @@ footer {
     white-space: nowrap;
     border-right: 3px solid #886969;
     width: 0;
-animation: typing 5s steps(10) infinite, blink 0.7s step-end infinite;}
+    animation: typing 5s steps(10) infinite, blink 0.7s step-end infinite;
+}
 
 @keyframes typing {
   0%, 30% { width: 0; }
@@ -318,6 +319,16 @@ animation: typing 5s steps(10) infinite, blink 0.7s step-end infinite;}
     border: 10px solid #886969;
     border-radius: 10px;
     cursor: crosshair;
+}
+
+.drawLabel {
+  color: #886969;
+  font-family: "Azeret Mono", monospace;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .trail {
