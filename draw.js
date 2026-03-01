@@ -21,9 +21,12 @@ canvas.addEventListener('mousemove', (e) => {
     if (!drawing) return;
     ctx.lineWidth = 3;
     ctx.lineCap = 'round';
+    ctx.strokeStyle = colorPicker.value;
     ctx.lineTo(e.offsetX, e.offsetY);
     ctx.stroke();
 });
 
 canvas.addEventListener('mouseup', () => (drawing = false));
 canvas.addEventListener('mouseleave', () => (drawing = false));
+
+const colorPicker = document.getElementById("colorPicker");
