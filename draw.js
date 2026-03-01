@@ -17,9 +17,10 @@ canvas.addEventListener('mousedown', (e) => {
 });
 
 // allows drawing when mouse moves while the button is held down
-// Need to look this part over again might be able to make the stoke smoother.
 canvas.addEventListener('mousemove', (e) => {
     if (!drawing) return;
+    ctx.lineWidth = 3;
+    ctx.lineCap = 'round';
     ctx.lineTo(e.offsetX, e.offsetY);
     ctx.stroke();
 });
