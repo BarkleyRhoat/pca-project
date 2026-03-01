@@ -1,5 +1,6 @@
 const canvas = document.getElementById('drawCanvas');
 const ctx = canvas.getContext('2d');
+const colorPicker = document.getElementById("colorPicker");
 
 canvas.width = 800; // could go bigger if need be
 canvas.height = 500;
@@ -29,4 +30,3 @@ canvas.addEventListener('mousemove', (e) => {
 canvas.addEventListener('mouseup', () => (drawing = false));
 canvas.addEventListener('mouseleave', () => (drawing = false));
 
-const colorPicker = document.getElementById("colorPicker");
