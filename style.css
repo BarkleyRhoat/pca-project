@@ -1,5 +1,6 @@
 body {
-  background: black;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Azeret Mono", monospace;
@@ -59,6 +60,34 @@ nav a:hover {
   position: relative;
 }
 
+.homeCards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.homeCard {
+  color: black;
+  background: #886969;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-family: "Azeret Mono", monospace;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
+}
+
+.homeCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
+}
+
 #gamesHeader {
   color: #886969;
   font-family: "Azeret Mono", monospace;
@@ -107,25 +136,25 @@ footer {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
   margin-left: 15px;
 }
 
 #portfolioLink:hover {
   background-color: #a67d7d;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
 }
 
 #githubLink:hover {
   background-color: #a67d7d;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
 }
 
 #githubLink:active {
   transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
 }
 
 .gamesList {
@@ -163,7 +192,7 @@ footer {
   font-family: "Arial", sans-serif;
   color: #886969;
   background: #1a1a1a;
-  border: 2px solid #886969;
+  border: 2px solid #333333;
   border-radius: 8px;
   cursor: pointer;
   display: grid;
@@ -188,6 +217,7 @@ footer {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
 }
 
 .tttReset:hover {
@@ -221,13 +251,13 @@ footer {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
 }
 
 .musicBtn:hover {
   background-color: #a67d7d;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
 }
 
 .signage {
@@ -240,6 +270,11 @@ footer {
   opacity: 0.6;
   pointer-events: none;
   z-index: 1000;
+}
+
+#pongGame {
+  border: 4px solid #333333;
+  border-radius: 10px;
 }
 
 .pongSection {
@@ -270,7 +305,7 @@ footer {
   width: 280px;
   height: 280px;
   background: #1a1a1a;
-  border: 2px solid #886969;
+  border: 2px solid #333333;
   border-radius: 8px;
   display: grid;
   place-items: center;
@@ -328,7 +363,7 @@ footer {
 }
 
 #drawCanvas {
-  border: 10px solid #886969;
+  border: 4px solid #333333;
   border-radius: 10px;
   cursor: crosshair;
 }
@@ -367,15 +402,14 @@ footer {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
 }
 
 .drawBtn:hover {
   background-color: #a67d7d;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
 }
-
 
 .drawControls {
   display: flex;

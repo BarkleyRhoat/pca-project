@@ -4,6 +4,7 @@ const colorPicker = document.getElementById("colorPicker");
 const brushSize = document.getElementById("brushSize");
 const clearBtn = document.getElementById("clearBtn");
 const eraserBtn = document.getElementById("eraserBtn");
+const saveBtn = document.getElementById ("saveBtn");
 
 canvas.width = 800; // could go bigger if need be
 canvas.height = 500;
@@ -42,4 +43,11 @@ clearBtn.addEventListener('click', () => {
 eraserBtn.addEventListener("click", () => {
     erasing = !erasing;
     eraserBtn.textContent = erasing ? "Draw" : "Eraser"
+});
+
+saveBtn.addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.download = 'sketch.png';
+    link.href = canvas.toDataURL();
+    link.click();
 });

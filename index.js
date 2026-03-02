@@ -9,18 +9,20 @@ setInterval(() => {
     h1.textContent = languages[currentLanguageIndex];
 }, 2000);
 let angle = 0;
-const radius = 200;
+const radius = 400;
 h1.style.position = 'absolute';
 const centerX = window.innerWidth / 2 - h1.offsetWidth / 2;
 const centerY = window.innerHeight / 2 - h1.offsetHeight / 2;
 
 function animate() {
-    angle += 0.02;
+    angle += 0.01;
+
+    const centerX = window.innerWidth / 2 - h1.offsetWidth / 2;
+    const centerY = window.innerHeight / 2 - h1.offsetHeight / 2;
 
     const x = centerX + Math.cos(angle) * radius;
     const y = centerY + Math.sin(angle) * radius;
 
-    h1.style.position = 'absolute';
     h1.style.left = x + 'px';
     h1.style.top = y + 'px';
 
