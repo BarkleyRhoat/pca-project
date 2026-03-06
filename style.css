@@ -163,23 +163,33 @@ footer {
   border-radius: 8px;
   transition: all 0.3s ease;
   box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
-  margin: 20px auto;
+  margin: 30px auto;
   display: block;
 }
 
 #toggleGames:hover {
   background-color: #a67d7d;
   transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
 }
 
 .gamesList {
+  max-height: 0;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: nowrap;
   gap: 60px;
+  overflow: hidden;
+  padding: 5px 40px;
+  transition:
+    max-height 0.4s ease,
+    padding 0.4s ease;
+}
+
+.gamesList.expanded {
+  max-height: 2000px;
   padding: 100px 40px 80px;
   overflow-x: auto;
 }

@@ -20,7 +20,7 @@ const radius = 400;
 h1.style.position = "absolute";
 
 function animate() {
-  angle += 0.01;
+  angle += 0.03;
 
   const centerX = window.innerWidth / 2 - h1.offsetWidth / 2;
   const centerY = window.innerHeight / 2 - h1.offsetHeight / 2;

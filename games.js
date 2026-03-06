@@ -8,6 +8,18 @@ function pauseMusic() {
     song.pause();
 }
 
+const toggleButton = document.getElementById('toggleGames')
+const gameList = document.querySelector('.gamesList')
+
+toggleButton.addEventListener('click', () => {
+  if (gameList.classList.contains('expanded')) {
+    gameList.classList.remove('expanded');
+    toggleButton.textContent = 'CLICK ME!';
+  } else {
+    gameList.classList.add('expanded');
+    toggleButton.textContent = 'Hide Games';
+  }
+});
 // TIC TAC TOE GAME!!!!!
 const tttBoard = document.querySelector("#tttBoard");
 
