@@ -167,6 +167,12 @@ footer {
   display: block;
 }
 
+#toggleGames:hover {
+  background-color: #a67d7d;
+  transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
+}
+
 .gamesList {
   display: flex;
   flex-direction: row;
