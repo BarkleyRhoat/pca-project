@@ -152,6 +152,21 @@ footer {
   box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
 }
 
+#toggleGames {
+  color: black;
+  background-color: #886969;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(136, 105, 105, 0.6);
+  margin: 20px auto;
+  display: block;
+}
+
 .gamesList {
   display: flex;
   flex-direction: row;
