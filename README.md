@@ -18,7 +18,8 @@ A multi-page personal website built for PCA Pre-Work using vanilla HTML, CSS & J
 ## About Project
 
 ![Home Page](./assets/homeScreen.png)
-![Games Page](./assets/gameScreen.png)
+![Games Page](./assets/gameScreen1.png)
+![Games Page](./assets/gameScreen2.png)
 ![Draw Page](./assets/drawScreen.png)
 ![About Me](./assets/aboutMeScreen.png)
 
