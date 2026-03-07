@@ -20,6 +20,7 @@ A multi-page personal website built for PCA Pre-Work using vanilla HTML, CSS & J
 ![Home Page](./assets/homeScreen.png)
 ![Games Page](./assets/gameScreen.png)
 ![Draw Page](./assets/drawScreen.png)
+![About Me](./assets/aboutMeScreen.png)
 
 ### Built with
 
@@ -79,6 +80,12 @@ git clone https://github.com/BarkleyRhoat/pca-project.git
   - Clear button to reset the canvas
   - Save button to download your drawing as a PNG
 - Animated typewriter header effect
+
+### About Me Page (`aboutMe.html`)
+
+- Star Wars-style opening crawl animation telling my journey
+- Text scrolls upward with a 3D perspectice tilt and gradient fade at the top
+- Exit button to return to the Home page.
 
 ## Contributors
 
